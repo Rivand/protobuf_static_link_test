@@ -1,0 +1,14 @@
+syntax = "proto3";
+package SimpleProtocol;
+
+enum SimpleProtocolVersion { v1_0_0 = 0; }
+
+message SlpMessage {
+	enum PacketTypes {
+		type_one = 0;
+		type_two = 1;
+	}
+	PacketTypes package_type = 1;  
+	uint32 package_id = 2;      
+	bytes data = 3;  
+}
