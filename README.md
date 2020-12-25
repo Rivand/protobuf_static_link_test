@@ -1,0 +1,1 @@
+# protobuf_static_link_test
